@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-
+import Image from "next/image";
 export function Itemcart() {
   const [cart, setCart] = useState([
     {
@@ -48,7 +48,7 @@ export function Itemcart() {
             key={item.id}
             className="grid grid-cols-[80px_1fr_auto] items-center gap-4"
           >
-            <img
+            <Image
               src="/placeholder.svg"
               alt={item.name}
               width={80}
