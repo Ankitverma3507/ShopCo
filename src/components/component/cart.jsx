@@ -53,8 +53,8 @@ const Cart = () => {
   const total = subtotal - perce + 15;
 
   return (
-    <div className=" bg-background shadow-sm items-center px-10 justify-center gap-8 flex flex-col md:flex md:flex-row">
-      <div className=" grid gap-6 md:w-[40%] bg-[FF0000]">
+    <div className=" bg-background p-7 shadow-sm items-center md:px-10 justify-center gap-8 flex flex-col md:flex md:flex-row">
+      <div className=" grid gap-6 md:w-[40%] ">
         <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
         {cart.map((item) => (
           <div
