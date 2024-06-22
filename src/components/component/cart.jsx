@@ -54,7 +54,7 @@ const Cart = () => {
 
   return (
     <div className=" bg-background shadow-sm items-center px-10 justify-center gap-8 flex flex-col md:flex md:flex-row">
-      <div className="grid gap-6 w-[40%]">
+      <div className=" grid gap-6 md:w-[40%] bg-[FF0000]">
         <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
         {cart.map((item) => (
           <div
@@ -97,7 +97,7 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <div className="w-[40%] md:mt-8">
+      <div className=" w-[65%] md:w-[40%] md:mt-8">
         <h1 className="text-xl font-semibold mb-4">Order Summary</h1>
         <div className="flex gap-3 flex-col">
           <div className="flex justify-between">
