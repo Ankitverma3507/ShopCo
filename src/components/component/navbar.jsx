@@ -153,7 +153,7 @@ export function Navbar() {
             <Input
               type="search"
               placeholder="Search products..."
-              className="pl-9 pr-9 focus:ring-primary"
+              className="pl-9 pr-9 focus:ring-primary rounded-full"
             />
             <Button
               variant="ghost"
