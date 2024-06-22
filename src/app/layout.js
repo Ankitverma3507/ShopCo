@@ -2,6 +2,7 @@
 import { Navbar } from '@/components/component/navbar';
 import { Footer } from '@/components/component/footer';
 import "./globals.css";
+import "./fonts.css";
 export const metadata = {
     title: 'SHOP.CO',
     description: 'Modern, stylish, and affordable clothing for all ages.',

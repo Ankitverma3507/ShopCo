@@ -17,17 +17,17 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-800 py-10 px-4 md:px-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Newsletter Section */}
-        <div className="bg-primary text-white p-6 rounded-lg mb-10 md:mb-16 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-muted">
+        <div className="bg-[#000] text-white px-6 py-10 rounded-xl mb-10 md:mb-16 text-center md:flex md:items-center md:justify-center gap-3">
+          <h2 className="text-3xl md:text-5xl  font-bold mb-4 text-muted">
             STAY UP TO DATE ABOUT OUR LATEST OFFERS
           </h2>
-          <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+          <div className="flex flex-col items-center justify-center  mt-8 gap-4 md:items-center md:justify-center">
             <input
               type="email"
               placeholder="Enter your email address"
-              className="p-3 rounded-md w-full md:w-80 text-black"
+              className="px-6 py-3 rounded-full w-full md:w-80 "
             />
-            <button className="bg-white text-black px-6 py-3 rounded-md font-semibold text-muted">
+            <button className="bg-[#ffff] text-[#000] w-full px-6 py-3 rounded-full font-semibold text-muted">
               Subscribe to Newsletter
             </button>
           </div>

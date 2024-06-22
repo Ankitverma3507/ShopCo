@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { FiTag } from "react-icons/fi";
 
 
 const Cart = () => {
@@ -54,8 +55,8 @@ const Cart = () => {
 
   return (
     <div className=" bg-background rounded-lg p-7 shadow-sm items-center md:px-10 justify-center gap-8 flex flex-col md:flex md:flex-row">
-      <div className=" grid gap-6 md:w-[40%] ">
-        <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
+      <div className=" grid gap-6 md:w-[40%] w-full">
+        <h2 className="text-2xl font-extrabold mb-6">Your Cart</h2>
         {cart.map((item) => (
           <div
             key={item.id}
@@ -70,7 +71,7 @@ const Cart = () => {
             />
             <div>
               <h3 className="font-medium">{item.name}</h3>
-              <p className="text-xs">Color: <span className=" text-muted-foreground">{item.color}</span> </p>
+              <p className="text-xs ">Color: <span className=" text-muted-foreground">{item.color}</span> </p>
               <p className="text-xs">Size: <span className="text-muted-foreground">{item.size}</span> </p>
               <p className="text-muted-foreground text-sm">
                 ₹ {item.price.toFixed(2)}
@@ -97,7 +98,7 @@ const Cart = () => {
           </div>
         ))}
       </div>
-      <div className=" w-[65%] md:w-[40%] md:mt-8">
+      <div className=" w-full md:w-[40%]  md:mt-8">
         <h1 className="text-xl font-semibold mb-4">Order Summary</h1>
         <div className="flex gap-3 flex-col">
           <div className="flex justify-between">
@@ -118,7 +119,16 @@ const Cart = () => {
           <p className="text-lg font-medium">Total:</p>
           <p className="text-lg font-medium">₹ {total.toFixed(2)}</p>
         </div>
-        <Button className="w-full mt-6 border">Proceed to Checkout</Button>
+        <div className="flex w-full gap-2 mt-2">
+        <input
+              type="email"
+              placeholder= "Enter Coupon Code"
+              className="px-2 rounded-full w-full border "
+              
+            />
+            <Button className="border bg-[#000] rounded-full hover:bg-[#000]">Apply</Button>
+        </div>
+        <Button className="w-full mt-6 border bg-[#000] hover:bg-[#000] rounded-full">Proceed to Checkout</Button>
       </div>
     </div>
   );

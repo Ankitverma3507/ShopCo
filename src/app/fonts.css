@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('/fonts/IntegralCF-Regular.woff2') format('woff2'),
+         url('/fonts/IntegralCF-Regular.woff') format('woff');
+    font-weight: 400; /* Normal weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Integral CF';
+    src: url('/fonts/IntegralCF-Bold.woff2') format('woff2'),
+         url('/fonts/IntegralCF-Bold.woff') format('woff');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+  
+  
+  /* styles/globals.css */
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+         url('/fonts/Satoshi-Regular.woff') format('woff');
+    font-weight: 400; /* Regular weight */
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Satoshi';
+    src: url('/fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('/fonts/Satoshi-Bold.woff') format('woff');
+    font-weight: 700; /* Bold weight */
+    font-style: normal;
+  }
+
+
+
+  body {
+    font-family: 'Integral CF', sans-serif;
+  }
+  
+  /* You can apply additional styles as needed */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Integral CF', sans-serif;
+  }

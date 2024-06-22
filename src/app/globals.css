@@ -45,3 +45,24 @@
       --radius: 0.5rem;
     }
   }
+
+
+
+
+
+
+
+
+  /* styles/globals.css */
+
+
+
+/* styles/globals.css */
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem /* 12px */;
+}
